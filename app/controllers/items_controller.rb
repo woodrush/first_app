@@ -1,6 +1,7 @@
 class ItemsController < ApplicationController
 	def new
-		format.xml  { render :xml => "<Response><Sms>aaThank you for using Trumo! Here is your number, so call them maybe... ------------</Sms></Response>", :status => :unprocessable_entity }
+		render :xml => { :error => 'Not found' }, :status => 404
+		# format.xml  { render :xml => "<Response><Sms>aaThank you for using Trumo! Here is your number, so call them maybe... ------------</Sms></Response>", :status => :unprocessable_entity }
 	#   @users = User.find(:all)
 	#   file = File.new('dir.xml','w')
 	#   doc = Document.new
