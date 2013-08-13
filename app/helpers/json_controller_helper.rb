@@ -1,0 +1,2 @@
+module JsonControllerHelper
+end
