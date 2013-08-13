@@ -17,5 +17,5 @@ class ItemsController < ApplicationController
 
 	#   file.puts doc
 	#   file.close
-	# end
+	end
 end
